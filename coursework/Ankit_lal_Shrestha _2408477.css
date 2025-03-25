@@ -1,0 +1,291 @@
+ /* Ankit lal shrestha  2408477 */
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+
+    background:url('https://i.pinimg.com/474x/d8/04/42/d804420f7c03275dccb56137f538bd60.jpg')no-repeat;
+    /* https://cdn.discordapp.com/attachments/1189570920386416740/1190865710176542800/img.webp?ex=65a35b1e&is=6590e61e&hm=602b4ed41e5b433ae8bfacb40bacef1f74e4d52e6f4943a691869af6930b16e6& */
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.con{
+    height: 100%;
+    width: 100%;
+}
+
+
+.data-container{
+    
+    height: 630px;
+    width: 38%;
+    border-radius: 8%;
+    margin: 100px auto;
+    margin-top: 10%;
+    backdrop-filter: blur(25px);
+    border: 5px solid black;
+    text-align: center;
+    overflow: visible;
+    flex: 1;
+    
+}
+
+
+.con input{
+    margin: 20px;
+    padding: 10px;
+    border: 0;
+    outline: 0;
+    padding: 10px 22px;
+    flex: auto;
+    margin-left: 50px;
+    border-radius: 90px;
+    font-size: 20px;
+    background-color: lightcyan;
+    color: black;
+    height: auto;
+    position: relative;
+    top: 0px;
+   
+   
+}
+
+.con button{
+    border: 0;
+    outline: 0;
+    background-color: rgb(223, 240, 240);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.con button:hover{
+    background-color: grey;
+}
+input[type="text"]{
+    position: absolute;
+    top: 0%;
+    right: 15%;
+    border-radius: 90px; 
+    width: 80%;
+}
+.cityname{
+    position: absolute;
+    top: 17%;
+    right: 42%;
+    font-size: 180%;
+    font-weight: bold;
+}
+
+.btn{
+    position: absolute;
+    top: 3%;
+    right: 8%;
+}
+.Date{
+    position: absolute;
+    top: 25%;
+    right: 5%;
+    font-weight: bold;
+    color: rgb(39, 35, 35);
+    font-size: 150%;
+    font-weight: bold;
+    width: 180px;
+}
+
+
+.details{
+    padding: 30px;
+    display: block;
+    position: absolute;
+    top: 8%;
+    left: 45%;
+    color: white;
+    font-size: 120%;
+    font-weight: bold;
+    
+}
+input[type="text"]{
+    top: 0px;
+    text-align: center;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.humidity{
+    border: 1px solid transparent;
+    position: absolute;
+    bottom: 15%;
+    right:35%;
+    color: black;
+    font-size: 130%;
+    display: flex ;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    font-weight: bold;
+}   
+.imghumid{
+    height: 105px;
+    width: 105px;
+    padding-right: 10px;
+    border-radius: 30%;
+}
+ 
+.Pressure{
+    border: 1px solid transparent;
+    font-size: 70%;
+    position: absolute;
+    bottom: 15%;
+    left: 6%;
+    color: black;   
+    display: flex;
+    justify-content: space-around;   
+    align-items: center;
+    text-align: center;
+    border-radius: 20%;
+    font-size: 110%;
+    font-weight: bold;
+    
+}
+.imgpressure{
+    height: 90px;
+    width: 105px;
+    border-radius: 20%;
+    padding-right:8px;
+    
+}
+
+
+
+.Temperature{
+    border: 1px solid transparent;
+    position: absolute;
+    bottom: 60%;
+    left: 39%;
+    font-size: 150%;
+    display: flex;
+    margin: auto;
+    color: black;
+    font-weight: bold;
+   
+}
+ 
+.Condition{
+    border: 1px solid transparent;
+    position: absolute;
+    bottom: 15%;
+    right: 38%;
+    display: flex;
+    font-size: 150%;
+    height: 250px;
+    
+   margin: auto;
+   color: black;
+   justify-content: space-around;
+   text-align: center;
+   align-items: center;
+   font-weight: bold;
+
+}
+ .weatherIcon{  
+    position: absolute;
+    bottom:50%;
+    height: 160px;
+    width: 170px;
+    padding: 20px;
+    border-radius: 20%;
+    display: block;
+
+} 
+.Wind{
+    border: 1px solid transparent;
+    position: absolute;
+    bottom: 15%;
+    font-size: 150%;
+    right: 3%;
+    color: black;   
+    display: flex;
+    justify-content: space-around;   
+    align-items: center;
+    text-align: left;
+    border-radius: 20%;
+    font-weight: bold;
+  
+    
+}  
+.imgwind{
+    height: 90px;
+    width: 105px;
+    padding-right: 10px;
+    border-radius: 20%;
+}  
+
+.footer  {
+    position: absolute;
+    bottom: 0;
+    display: block;
+    background-color: #333;
+    text-align: center;
+    color: white;
+    bottom: 0%;
+    height: 50px;
+    width: 100%;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    font-weight: bold;
+}
+
+/* responsive */
+@media only screen and (max-width:650px) 
+{
+    .data-container{
+        height: 800px;
+        width: 80%;
+        border-radius: 5%;
+        margin: 100px auto;
+        left: 7%;
+    }
+    
+    .data-container input{
+        left: 0;
+        right: auto;
+    }
+    .btn{
+    left: 90%;
+        
+        
+    }
+    
+    
+    .details{
+        top: 20px;
+        left:10%;
+    }
+    .humidity{
+        left: 70%;
+    }
+    .Temperature{
+        left:5%
+    }
+    .Pressure,
+    .Condition{
+        left: 40%;
+    }
+    .Wind{
+        left:35%;
+    }
+    .footer{
+        bottom: 0%;
+    }
+}
+    
+
